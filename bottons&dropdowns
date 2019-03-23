@@ -1,0 +1,74 @@
+<!-- Buttons 库的核心文件 -->
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="css/buttons.css">
+ 
+<!-- 当需要使用带下拉菜单的按钮时才需要加载下面的 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/buttons.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 只有使用字体图标时才需要加载 Font-Awesome -->
+
+<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+    body {
+        background: blue;
+    }
+</style>
+<body>
+<button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
+<button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
+<button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
+<button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
+<a href="http://www.bootcss.com/" class="button button-tiny">Go</a>
+<a href="http://www.bootcss.com/" class="button button-rounded button-tiny">Go</a>
+<a href="http://www.bootcss.com/" class="button button-pill button-tiny">Go</a>
+<button class="button button-square button-tiny"><i class="fa fa-plus"></i></button>
+<button class="button button-box button-tiny"><i class="fa fa-plus"></i></button>
+<button class="button button-circle button-tiny"><i class="fa fa-plus"></i></button>
+<span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
+    <a href="#" class="button button-inverse">
+        <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
+    </a>
+ 
+    <ul class="button-dropdown-list is-below">
+      <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+      <li class="button-dropdown-divider">
+        <a href="http://www.bootcss.com/">Option Link 2</a>
+      </li>
+      <li>
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+  <span class="button-dropdown" data-buttons="dropdown">
+    <button class="button button-rounded">
+      Select Me <i class="fa fa-caret-down"></i>
+    </button>
+ 
+    <ul class="button-dropdown-list">
+      <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+      <li><a href="http://www.bootcss.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+
+</body>
+</html>
